@@ -1,8 +1,15 @@
-
+import { useTranslation } from "react-i18next"
 
 function App() {
+  const { t, i18n } = useTranslation();
+
+  const switchLanguage = () => {
+    const newLanguage = i18n.language === "en" ? "nl" : "en";
+    i18n.changeLanguage(newLanguage);
+  }
+
   return (
-    <div className="browser">
+    <main className="browser">
       <header className="browser-bar">
 
         <h1>margreen.dev | Marylou Groeneveld</h1>
@@ -20,18 +27,25 @@ function App() {
           </div>
 
           <div className="language">
-            <img src="language.svg" alt="language" />
-            <p>NL</p> {/* will be button ig */}
+            <button onClick={switchLanguage}>
+              <img src="language.svg" alt="language" />
+              {i18n.language === "en" ? "NL" : "EN"}
+            </button> {/* will be button ig */}
           </div>
         </div>
       </header>
 
       <div className="browser-content">
-        <h1>welcome</h1>
-        <p>my cool portfolio</p>
+        <aside>
+          <h2>{t("sidebar.title")}</h2>
+          <p>{t("sidebar.description")}</p>
+
+        </aside>
       </div>
 
-    </div>
+
+
+    </main>
   )
 }
 
