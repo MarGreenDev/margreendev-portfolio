@@ -30,6 +30,8 @@ body {
   border-radius: 20px;
 
   overflow: hidden;
+
+  border: 2px inset white;
 }
 
 .browser-bar {
@@ -71,9 +73,20 @@ body {
 }
 
 .search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
   border-radius: 15px;
   background-color: antiquewhite;
   min-width: 60%;
+
+  font-size: small;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.search-bar img {
+  opacity: 50%;
 }
 
 .language {

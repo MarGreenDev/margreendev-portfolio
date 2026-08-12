@@ -5,7 +5,7 @@ function App() {
     <div className="browser">
       <header className="browser-bar">
 
-        <h1>margreen.dev</h1>
+        <h1>margreen.dev | Marylou Groeneveld</h1>
 
         <div className="search-lang">
 
@@ -15,7 +15,8 @@ function App() {
           </div>
 
           <div className="search-bar">
-            <p>Welcome to my portfolio!</p>
+            <img src="lock.svg" alt="lock" />
+            <p>https:://welcome-to-my-portfolio.dev</p>
           </div>
 
           <div className="language">
