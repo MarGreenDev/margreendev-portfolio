@@ -1,8 +1,88 @@
 :root {
-  --primary-color: green;
+  --background-color: rgba(241, 240, 231, 0.4);
+  --primary-color: #26352A;
+  --secondary-color: #AFCDA3;
+}
+
+html {
+  font-family: monospace;
 }
 
 body {
+  margin: 0;
+  min-height: 100vh;
+
+  background-image: url(assets/background-img.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.browser {
+  width: 90%;
+  max-width: 1200px;
+  height: 80vh;
+
+  margin: 5vh auto;
+
+  background-color: var(--background-color);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+.browser-bar {
   background-color: var(--primary-color);
-  font-family: monospace;
+  min-height: 70px;
+
+  padding: 5px 15px 15px 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.browser-bar h1 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: x-small;
+  color: var(--secondary-color);
+}
+
+.search-lang {
+  display: flex;
+  justify-content: space-around;
+}
+
+.arrow-buttons {
+  display: flex;
+  gap: 10px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.arrow-buttons .arrow {
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  line-height: 45px;
+}
+
+.search-bar {
+  border-radius: 15px;
+  background-color: antiquewhite;
+  min-width: 60%;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  background-color: antiquewhite;
+  padding: 0 10px 0 10px;
+
+  text-align: center;
 }
