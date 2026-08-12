@@ -29,7 +29,7 @@ function App() {
           <div className="language">
             <button onClick={switchLanguage}>
               <img src="language.svg" alt="language" />
-              {i18n.language === "en" ? "NL" : "EN"}
+              <p>{i18n.language === "en" ? "NL" : "EN"}</p>
             </button> {/* will be button ig */}
           </div>
         </div>
