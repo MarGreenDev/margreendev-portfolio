@@ -2,5 +2,10 @@
     "sidebar": {
         "title": "Hi, I'm Marylou!",
         "description": "Full-stack web developer"
+    },
+    "nav": {
+        "about-me": "About me",
+        "projects": "Projects",
+        "contact": "Contact"
     }
 }

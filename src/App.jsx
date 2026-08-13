@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next"
+import Nav from "./components/nav";
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -23,17 +24,19 @@ function App() {
 
           <div className="search-bar">
             <img src="lock.svg" alt="lock" />
-            <p>https:://welcome-to-my-portfolio.dev</p>
+            <p>https://welcome-to-my-portfolio.dev</p>
           </div>
 
           <div className="language">
             <button onClick={switchLanguage}>
               <img src="language.svg" alt="language" />
               <p>{i18n.language === "en" ? "NL" : "EN"}</p>
-            </button> {/* will be button ig */}
+            </button>
           </div>
         </div>
       </header>
+
+      <Nav />
 
       <div className="browser-content">
         <aside>
