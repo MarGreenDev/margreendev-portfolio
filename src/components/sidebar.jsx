@@ -8,8 +8,11 @@ export default function Sidebar() {
     return (
         <aside className="info-section">
             <img src={profilePhoto} alt="profile photo" />
-            <h2>{t("sidebar.title")}</h2>
-            <p>{t("sidebar.description")}</p>
+
+            <div className="sidebar-title">
+                <h2>{t("sidebar.title")}</h2>
+                <p>{t("sidebar.description")}</p>
+            </div>
 
         </aside>
 

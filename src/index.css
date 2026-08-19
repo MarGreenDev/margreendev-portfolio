@@ -129,12 +129,63 @@ nav ul {
   list-style-type: none;
 }
 
+.browser-content {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+}
+
 aside {
   display: flex;
   flex-direction: column;
-  background-color: var(--primary-color);
+  align-items: center;
+  gap: 15px;
+
+  background-color: var(--secondary-color);
+
+  border-radius: 30px;
+  border: white inset 2px;
+
+  margin: 10px;
+  padding: 15px;
 }
 
 aside img {
-  width: 200px;
+  width: 175px;
+  border-radius: 30px;
+  border: white 2px inset;
 }
+
+.sidebar-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-title h2,
+.sidebar-title p {
+  margin: 0;
+
+  text-align: center;
+}
+
+/* media queries + responsive stuff bla bla */
+
+/* mobile */
+@media (max-width: 768px) {
+  aside {
+    display: none;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) {}
+
+/* laptop */
+@media (min-width: 1024px) {
+  .browser-content {
+    grid-template-columns: 300px 1fr;
+  }
+}
+
+/* desktop */
+@media (min-width: 1280px) {}
