@@ -128,3 +128,13 @@ nav ul {
 
   list-style-type: none;
 }
+
+aside {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
+}
+
+aside img {
+  width: 200px;
+}

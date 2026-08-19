@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next"
 import Nav from "./components/nav";
+import Sidebar from "./components/sidebar";
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -10,7 +11,7 @@ function App() {
   }
 
   return (
-    <main className="browser">
+    <div className="browser">
       <header className="browser-bar">
 
         <h1>margreen.dev | Marylou Groeneveld</h1>
@@ -38,17 +39,22 @@ function App() {
 
       <Nav />
 
-      <div className="browser-content">
-        <aside>
-          <h2>{t("sidebar.title")}</h2>
-          <p>{t("sidebar.description")}</p>
+      <div className="browser-body">
 
-        </aside>
+        <div className="browser-content">
+
+          < Sidebar />
+
+          <main>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quibusdam ipsam cum voluptatem itaque ea quo repudiandae praesentium assumenda optio soluta nulla dolorum quaerat corporis ut, corrupti a aliquam velit.</p>
+          </main>
+        </div>
+
+        <footer>
+          footer
+        </footer>
       </div>
-
-
-
-    </main>
+    </div>
   )
 }
 
