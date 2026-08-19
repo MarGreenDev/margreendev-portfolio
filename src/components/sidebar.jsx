@@ -14,11 +14,16 @@ export default function Sidebar() {
                 <p>{t("sidebar.description")}</p>
             </div>
 
+            <div className="where">
+                <p>🏫 {t("sidebar.school")}</p>
+                <p>🌳 {t("sidebar.home")}</p>
+            </div>
+
             <div className="sidebar-links">
-                <a className="link" href="https://github.com/MarGreenDev">
+                <a className="link" target="_blank" href="https://github.com/MarGreenDev">
                     <img src="github.svg" alt="github link" />
                 </a>
-                <a className="link" href="https://www.linkedin.com/in/marylou-groeneveld-861111217/">
+                <a className="link" target="_blank" href="https://www.linkedin.com/in/marylou-groeneveld-861111217/">
                     <img src="linkedin.svg" alt="linkedin link" />
                 </a>
                 <a className="link" href="mailto:marylougroeneveld@gmail.com">

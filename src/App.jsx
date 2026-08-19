@@ -3,7 +3,7 @@ import Nav from "./components/nav";
 import Sidebar from "./components/sidebar";
 
 function App() {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
   const switchLanguage = () => {
     const newLanguage = i18n.language === "en" ? "nl" : "en";

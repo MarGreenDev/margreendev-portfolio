@@ -29,7 +29,7 @@ body {
   backdrop-filter: blur(5px);
   border-radius: 20px;
 
-  overflow: hidden;
+  overflow: auto;
 
   border: 2px inset white;
 }
@@ -165,7 +165,21 @@ aside .profile-photo {
 .sidebar-title p {
   margin: 0;
 
+  font-size: large;
   text-align: center;
+}
+
+.sidebar-title p {
+  font-size: smaller;
+}
+
+aside .where {
+  border-top: #26352A solid 1px;
+  border-bottom: #26352A solid 1px;
+}
+
+aside .where p {
+  font-size: small;
 }
 
 .sidebar-links {

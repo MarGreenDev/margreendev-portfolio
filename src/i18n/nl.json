@@ -1,7 +1,9 @@
 {
     "sidebar": {
         "title": "Hi, ik ben Marylou!",
-        "description": "Full-stack web developer"
+        "description": "Full-stack web developer",
+        "school": "Grafisch Lyceum Utrecht",
+        "home": "Woont in Apeldoorn"
     },
     "nav": {
         "about-me": "Over mij",
