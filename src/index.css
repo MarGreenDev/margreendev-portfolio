@@ -149,7 +149,7 @@ aside {
   padding: 15px;
 }
 
-aside img {
+aside .profile-photo {
   width: 175px;
   border-radius: 30px;
   border: white 2px inset;
@@ -168,10 +168,30 @@ aside img {
   text-align: center;
 }
 
+.sidebar-links {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+}
+
+.sidebar-links .link {
+  background-color: white;
+
+  margin: 0 auto;
+  padding: 10px;
+
+  border-radius: 30px;
+}
+
+.sidebar-links img {
+  width: 40px;
+}
+
 /* media queries + responsive stuff bla bla */
 
 /* mobile */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   aside {
     display: none;
   }
