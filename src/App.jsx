@@ -46,7 +46,6 @@ function App() {
           < Sidebar />
 
           <main>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quibusdam ipsam cum voluptatem itaque ea quo repudiandae praesentium assumenda optio soluta nulla dolorum quaerat corporis ut, corrupti a aliquam velit.</p>
           </main>
         </div>
 
