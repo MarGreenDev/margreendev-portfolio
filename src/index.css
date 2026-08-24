@@ -78,7 +78,7 @@ body {
   gap: 10px;
   padding-left: 10px;
   border-radius: 15px;
-  background-color: antiquewhite;
+  background-color: white;
   min-width: 60%;
 
   font-size: small;
@@ -94,7 +94,7 @@ body {
   align-items: center;
   gap: 10px;
   border-radius: 15px;
-  background-color: antiquewhite;
+  background-color: white;
   padding: 0 10px 0 10px;
 
   text-align: center;
