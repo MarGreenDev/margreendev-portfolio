@@ -6,6 +6,17 @@
 
 html {
   font-family: monospace;
+
+  scrollbar-color: var(--secondary-color) var(--primary-color);
+}
+
+::selection {
+  background-color: #26352A;
+  color: #AFCDA3;
+}
+
+button {
+  font-family: monospace;
 }
 
 body {
@@ -28,7 +39,7 @@ body {
 .browser {
   width: 90%;
   max-width: 1200px;
-  height: 80vh;
+  height: 85vh;
 
   margin: 5vh auto;
 
