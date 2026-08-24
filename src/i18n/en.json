@@ -9,5 +9,8 @@
         "about-me": "About me",
         "projects": "Projects",
         "contact": "Contact"
+    },
+    "footer": {
+        "text": "2026 | Made with 💚 by Marylou Groeneveld"
     }
 }

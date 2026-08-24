@@ -8,7 +8,7 @@ import Contact from "./pages/contact";
 
 
 function App() {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const [activePage, setActivePage] = useState("about");
 
@@ -60,7 +60,7 @@ function App() {
         </div>
 
         <footer>
-          <p>2026 | Made with 💚 by Marylou Groeneveld</p>
+          <p>{t("footer.text")}</p>
         </footer>
       </div>
     </div>

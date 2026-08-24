@@ -9,5 +9,8 @@
         "about-me": "Over mij",
         "projects": "Projecten",
         "contact": "Contact"
+    },
+    "footer": {
+        "text": "2026 | Gemaakt met 💚 door Marylou Groeneveld"
     }
 }
