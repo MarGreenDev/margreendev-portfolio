@@ -18,12 +18,22 @@ body {
   background-attachment: fixed;
 }
 
+.browser-body {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+}
+
 .browser {
   width: 90%;
   max-width: 1200px;
   height: 80vh;
 
   margin: 5vh auto;
+
+  display: flex;
+  flex-direction: column;
 
   background-color: var(--background-color);
   backdrop-filter: blur(5px);
@@ -154,6 +164,7 @@ nav ul li {
 .browser-content {
   display: grid;
   grid-template-columns: 250px 1fr;
+  flex: 1;
 }
 
 aside {
@@ -222,6 +233,17 @@ aside .where p {
 
 .sidebar-links img {
   width: 40px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+
+  p {
+    font-size: x-small;
+
+    color: rgba(0, 0, 0, 0.6);
+  }
 }
 
 /* media queries + responsive stuff bla bla */

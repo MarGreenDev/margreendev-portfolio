@@ -60,7 +60,7 @@ function App() {
         </div>
 
         <footer>
-          footer
+          <p>2026 | Made with 💚 by Marylou Groeneveld</p>
         </footer>
       </div>
     </div>
