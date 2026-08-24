@@ -1,9 +1,16 @@
 import { useTranslation } from "react-i18next"
+import { useState } from "react";
 import Nav from "./components/nav";
 import Sidebar from "./components/sidebar";
+import About from "./pages/about";
+import Projects from "./pages/projects";
+import Contact from "./pages/contact";
+
 
 function App() {
   const { i18n } = useTranslation();
+
+  const [activePage, setActivePage] = useState("about");
 
   const switchLanguage = () => {
     const newLanguage = i18n.language === "en" ? "nl" : "en";
@@ -37,7 +44,7 @@ function App() {
         </div>
       </header>
 
-      <Nav />
+      <Nav setActivePage={setActivePage} />
 
       <div className="browser-body">
 
@@ -46,6 +53,9 @@ function App() {
           < Sidebar />
 
           <main>
+            {activePage === "about" && <About />}
+            {activePage === "projects" && <Projects />}
+            {activePage === "contact" && <Contact />}
           </main>
         </div>
 
