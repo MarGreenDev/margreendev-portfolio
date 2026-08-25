@@ -44,7 +44,8 @@ function App() {
         </div>
       </header>
 
-      <Nav setActivePage={setActivePage} />
+      <Nav setActivePage={setActivePage}
+        activePage={activePage} />
 
       <div className="browser-body">
 
