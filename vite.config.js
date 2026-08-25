@@ -4,6 +4,7 @@ import babel from '@rolldown/plugin-babel'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/margreendev-portfolio',
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] })
