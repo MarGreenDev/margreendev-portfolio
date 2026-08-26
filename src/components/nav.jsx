@@ -8,7 +8,7 @@ export default function Nav({ setActivePage, activePage }) {
 
     const [menuOpen, setMenuOpen] = useState(false);
 
-    const clickSound = new Audio("./public/click.mp3");
+    const clickSound = new Audio("/click.mp3");
 
     return (
         <>
