@@ -152,12 +152,14 @@ body {
   cursor: pointer;
 }
 
-nav {
+
+/* NAVIGATION!!!!!!! i hate css */
+.desktop-nav {
   background-color: var(--secondary-color);
   border-bottom: solid rgba(255, 255, 255, 0.33) 1px;
 }
 
-nav .button {
+.desktop-nav .button {
   display: block;
   width: 100%;
   height: 100%;
@@ -181,7 +183,7 @@ nav .button {
   background-color: #7e9476;
 }
 
-nav ul {
+.desktop-nav ul {
   display: flex;
   justify-content: space-evenly;
   margin: 0 0 0 200px;
@@ -189,7 +191,7 @@ nav ul {
   list-style-type: none;
 }
 
-nav ul li {
+.desktop-nav ul li {
   background-color: rgba(0, 0, 0, 0.15);
   margin: 10px 0 10px 0;
 
@@ -203,11 +205,37 @@ nav ul li {
 
 }
 
-nav ul li:hover {
+.desktop-nav ul li:hover {
   background-color: rgba(153, 241, 136, 0.344);
 }
 
+.mobile-nav {
+  position: relative;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.mobile-nav button {
+  display: block;
+  margin-left: auto;
+
+  min-width: 40px;
+  min-height: 40px;
+  font-size: 28px;
+
+  border: none;
+  border-radius: 10px;
+}
+
 .mobile-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+
+  padding: 5px;
+  margin: 10px;
+  margin-top: 0;
+
   transform: translateY(-100%);
   opacity: 0;
   pointer-events: none;
@@ -218,7 +246,7 @@ nav ul li:hover {
   transform: translateY(0);
   opacity: 1;
   pointer-events: auto;
-  background-color: red;
+  background-color: var(--secondary-color);
 }
 
 .browser-content {
@@ -326,13 +354,17 @@ footer {
     display: none;
   }
 
-  nav {
+  .desktop-nav {
     display: none;
   }
 }
 
 /* tablet */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+}
 
 /* laptop */
 @media (min-width: 1024px) {

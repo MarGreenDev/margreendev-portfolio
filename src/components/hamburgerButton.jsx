@@ -1,8 +1,10 @@
 
 
-export default function HamburgerButton({ onClick }) {
+export default function HamburgerButton({ onClick, isOpen }) {
 
     return (
-        <button onClick={onClick}>Knop</button>
+        <button onClick={onClick}>
+            {isOpen ? "X" : "☰"}
+        </button>
     )
 }

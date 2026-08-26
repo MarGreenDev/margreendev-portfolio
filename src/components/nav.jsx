@@ -11,49 +11,55 @@ export default function Nav({ setActivePage, activePage }) {
     const clickSound = new Audio("./public/click.mp3");
 
     return (
-        <nav>
-            <ul>
-                <li>
-                    <button
-                        className={`button ${activePage === "about" ? "active" : ""}`}
-                        onClick={() => {
-                            setActivePage("about"),
-                                clickSound.play();
-                        }}>
-                        {t("nav.about-me")}
-                    </button>
-                </li>
-                <li>
-                    <button
-                        className={`button ${activePage === "projects" ? "active" : ""}`}
-                        onClick={() => {
-                            setActivePage("projects"),
-                                clickSound.play();
-                        }}>
-                        {t("nav.projects")}
-                    </button>
-                </li>
-                <li>
-                    <button
-                        className={`button ${activePage === "contact" ? "active" : ""}`}
-                        onClick={() => {
-                            setActivePage("contact"),
-                                clickSound.play();
-                        }}>
-                        {t("nav.contact")}
-                    </button>
-                </li>
-            </ul>
+        <>
+            <nav className="desktop-nav">
+                <ul>
+                    <li>
+                        <button
+                            className={`button ${activePage === "about" ? "active" : ""}`}
+                            onClick={() => {
+                                setActivePage("about"),
+                                    clickSound.play();
+                            }}>
+                            {t("nav.about-me")}
+                        </button>
+                    </li>
+                    <li>
+                        <button
+                            className={`button ${activePage === "projects" ? "active" : ""}`}
+                            onClick={() => {
+                                setActivePage("projects"),
+                                    clickSound.play();
+                            }}>
+                            {t("nav.projects")}
+                        </button>
+                    </li>
+                    <li>
+                        <button
+                            className={`button ${activePage === "contact" ? "active" : ""}`}
+                            onClick={() => {
+                                setActivePage("contact"),
+                                    clickSound.play();
+                            }}>
+                            {t("nav.contact")}
+                        </button>
+                    </li>
+                </ul>
 
-            <div className="mobile-nav">
+
+            </nav >
+
+
+            <nav className="mobile-nav">
                 <HamburgerButton
                     isOpen={menuOpen}
                     onClick={() => setMenuOpen(!menuOpen)}
                 />
 
-                <MobileMenu isOpen={menuOpen} />
-            </div>
-
-        </nav >
+                <MobileMenu isOpen={menuOpen}
+                    setActivePage={setActivePage}
+                    activePage={activePage} />
+            </nav>
+        </>
     );
 }
