@@ -32,7 +32,7 @@ function App() {
 
           <div className="search-bar">
             <img src="lock.svg" alt="lock" />
-            <p>https://welcome-to-my-portfolio.dev</p>
+            <p>https://margreen.dev/{activePage}</p>
           </div>
 
           <div className="language">
