@@ -3,6 +3,8 @@ import { useTranslation } from "react-i18next"
 export default function Nav({ setActivePage, activePage }) {
     const { t } = useTranslation();
 
+    const clickSound = new Audio("./public/click.mp3");
+
     return (
         <nav>
             <ul>
@@ -10,7 +12,8 @@ export default function Nav({ setActivePage, activePage }) {
                     <button
                         className={`button ${activePage === "about" ? "active" : ""}`}
                         onClick={() => {
-                            setActivePage("about");
+                            setActivePage("about"),
+                                clickSound.play();
                         }}>
                         {t("nav.about-me")}
                     </button>
@@ -18,14 +21,20 @@ export default function Nav({ setActivePage, activePage }) {
                 <li>
                     <button
                         className={`button ${activePage === "projects" ? "active" : ""}`}
-                        onClick={() => setActivePage("projects")}>
+                        onClick={() => {
+                            setActivePage("projects"),
+                                clickSound.play();
+                        }}>
                         {t("nav.projects")}
                     </button>
                 </li>
                 <li>
                     <button
                         className={`button ${activePage === "contact" ? "active" : ""}`}
-                        onClick={() => setActivePage("contact")}>
+                        onClick={() => {
+                            setActivePage("contact"),
+                                clickSound.play();
+                        }}>
                         {t("nav.contact")}
                     </button>
                 </li>

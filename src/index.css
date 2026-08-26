@@ -177,6 +177,10 @@ nav .button {
     var(--primary-color) inset 2px 2px 2px;
 }
 
+.button.active:hover {
+  background-color: #7e9476;
+}
+
 nav ul {
   display: flex;
   justify-content: space-evenly;
@@ -197,6 +201,10 @@ nav ul li {
   box-shadow: white inset 1px 1px,
     var(--primary-color) inset -2px -2px 2px;
 
+}
+
+nav ul li:hover {
+  background-color: rgba(153, 241, 136, 0.344);
 }
 
 .browser-content {
