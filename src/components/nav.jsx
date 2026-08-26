@@ -1,7 +1,12 @@
 import { useTranslation } from "react-i18next"
+import HamburgerButton from "./hamburgerButton";
+import MobileMenu from "./mobileMenu";
+import { useState } from "react";
 
 export default function Nav({ setActivePage, activePage }) {
     const { t } = useTranslation();
+
+    const [menuOpen, setMenuOpen] = useState(false);
 
     const clickSound = new Audio("./public/click.mp3");
 
@@ -39,6 +44,16 @@ export default function Nav({ setActivePage, activePage }) {
                     </button>
                 </li>
             </ul>
+
+            <div className="mobile-nav">
+                <HamburgerButton
+                    isOpen={menuOpen}
+                    onClick={() => setMenuOpen(!menuOpen)}
+                />
+
+                <MobileMenu isOpen={menuOpen} />
+            </div>
+
         </nav >
     );
 }
