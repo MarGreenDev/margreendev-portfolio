@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next"
 export default function Nav({ setActivePage, activePage }) {
     const { t } = useTranslation();
 
-    const clickSound = new Audio("./public/click.mp3");
+    const clickSound = new Audio("/click.mp3");
 
     return (
         <nav>
