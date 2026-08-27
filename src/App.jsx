@@ -5,6 +5,7 @@ import Sidebar from "./components/sidebar";
 import About from "./pages/about";
 import Projects from "./pages/projects";
 import Contact from "./pages/contact";
+import SidebarButton from "./components/sidebarButton";
 
 
 function App() {
@@ -44,8 +45,11 @@ function App() {
         </div>
       </header>
 
-      <Nav setActivePage={setActivePage}
-        activePage={activePage} />
+      <div className="mobile-bar">
+        <SidebarButton />
+        <Nav setActivePage={setActivePage}
+          activePage={activePage} />
+      </div>
 
       <div className="browser-body">
 
