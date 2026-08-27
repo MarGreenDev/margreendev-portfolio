@@ -3,7 +3,7 @@
 export default function HamburgerButton({ onClick, isOpen }) {
 
     return (
-        <button onClick={onClick}>
+        <button className="hamburger-button" onClick={onClick}>
             {isOpen ? "X" : "☰"}
         </button>
     )

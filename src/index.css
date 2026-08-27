@@ -212,12 +212,14 @@ body {
 .mobile-nav {
   position: relative;
   padding: 10px;
-  padding-bottom: 0;
+  padding-bottom: 10px;
 }
 
-.mobile-nav button {
+.mobile-nav .hamburger-button {
   display: block;
   margin-left: auto;
+
+  background-color: lightgray;
 
   min-width: 40px;
   min-height: 40px;
@@ -225,6 +227,9 @@ body {
 
   border: none;
   border-radius: 10px;
+
+  box-shadow: inset white 1px 1px,
+    black 1px 1px 2px;
 }
 
 .mobile-menu {
@@ -240,6 +245,38 @@ body {
   opacity: 0;
   pointer-events: none;
   transition: 0.3s ease;
+
+  border-radius: 5px;
+
+  box-shadow: inset white 1px 1px,
+    var(--primary-color) 1px 1px 2px;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    list-style-type: none;
+    padding: 5px;
+
+    li {
+
+      button {
+        background-color: rgba(0, 0, 0, 0.1);
+        border: none;
+        border-radius: 5px;
+
+        min-width: 100px;
+
+        padding: 5px;
+
+        font-size: large;
+
+        box-shadow: inset white 1px 1px,
+          var(--primary-color) 1px 1px 2px;
+      }
+    }
+  }
 }
 
 .mobile-menu.open {
