@@ -3,7 +3,11 @@
         "title": "Hi, I'm Marylou!",
         "description": "Full-stack web developer",
         "school": "Grafisch Lyceum Utrecht",
-        "home": "Based in Apeldoorn"
+        "home": "Based in Apeldoorn",
+        "button": {
+            "close": "Close profile",
+            "open": "View profile"
+        }
     },
     "nav": {
         "about-me": "About me",

@@ -5,12 +5,14 @@ import Sidebar from "./components/sidebar";
 import About from "./pages/about";
 import Projects from "./pages/projects";
 import Contact from "./pages/contact";
+import SidebarButton from "./components/sidebarButton";
 
 
 function App() {
   const { t, i18n } = useTranslation();
 
   const [activePage, setActivePage] = useState("about");
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const switchLanguage = () => {
     const newLanguage = i18n.language === "en" ? "nl" : "en";
@@ -44,14 +46,18 @@ function App() {
         </div>
       </header>
 
-      <Nav setActivePage={setActivePage}
-        activePage={activePage} />
+      <div className="mobile-bar">
+        <SidebarButton isOpen={sidebarOpen}
+          onClick={() => setSidebarOpen(!sidebarOpen)} />
+        <Nav setActivePage={setActivePage}
+          activePage={activePage} />
+      </div>
 
       <div className="browser-body">
 
         <div className="browser-content">
 
-          < Sidebar />
+          < Sidebar isOpen={sidebarOpen} />
 
           <main>
             {activePage === "about" && <About />}
