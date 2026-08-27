@@ -47,7 +47,8 @@ function App() {
       </header>
 
       <div className="mobile-bar">
-        <SidebarButton onClick={() => setSidebarOpen(!sidebarOpen)} />
+        <SidebarButton isOpen={sidebarOpen}
+          onClick={() => setSidebarOpen(!sidebarOpen)} />
         <Nav setActivePage={setActivePage}
           activePage={activePage} />
       </div>
