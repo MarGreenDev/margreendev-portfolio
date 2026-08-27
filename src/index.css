@@ -406,15 +406,19 @@ footer {
     display: none;
   }
 
-  aside {
-    opacity: 0;
+  .info-section {
     pointer-events: none;
     position: absolute;
+
+    transform: translateX(-110%);
+
+    transition: transform 0.3s ease;
   }
 
-  aside.open {
-    opacity: 1;
-    transform: translateY(0);
+  .info-section.open {
+    transform: translateX(0);
+
+    pointer-events: auto;
   }
 
   .desktop-nav {
@@ -429,6 +433,14 @@ footer {
 /* tablet */
 @media (min-width: 768px) {
   .mobile-nav {
+    display: none;
+  }
+
+  .mobile-bar {
+    display: block;
+  }
+
+  .mobile-bar .sidebar-button {
     display: none;
   }
 }

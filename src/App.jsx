@@ -12,6 +12,7 @@ function App() {
   const { t, i18n } = useTranslation();
 
   const [activePage, setActivePage] = useState("about");
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const switchLanguage = () => {
     const newLanguage = i18n.language === "en" ? "nl" : "en";
@@ -46,7 +47,7 @@ function App() {
       </header>
 
       <div className="mobile-bar">
-        <SidebarButton />
+        <SidebarButton onClick={() => setSidebarOpen(!sidebarOpen)} />
         <Nav setActivePage={setActivePage}
           activePage={activePage} />
       </div>
@@ -55,7 +56,7 @@ function App() {
 
         <div className="browser-content">
 
-          < Sidebar />
+          < Sidebar isOpen={sidebarOpen} />
 
           <main>
             {activePage === "about" && <About />}

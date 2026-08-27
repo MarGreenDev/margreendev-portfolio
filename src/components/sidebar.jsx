@@ -1,12 +1,12 @@
 import { useTranslation } from "react-i18next";
 import profilePhoto from "../assets/default-pfp.jpeg";
 
-export default function Sidebar() {
+export default function Sidebar({ isOpen }) {
 
     const { t } = useTranslation();
 
     return (
-        <aside className="info-section">
+        <aside className={`info-section ${isOpen ? "open" : ""}`}>
             <img src={profilePhoto} alt="profile photo" className="profile-photo" />
 
             <div className="sidebar-title">
