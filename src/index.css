@@ -393,24 +393,20 @@ aside .where p {
   width: 40px;
 }
 
-.container {
-  width: 400px;
-  height: 400px;
-  overflow: hidden;
+.mobile-tictactoe {
+  margin: 0;
+}
 
+.mobile-tictactoe figcaption {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.mobile-tictactoe img {
+  display: block;
+  width: 75%;
   margin: 0 auto;
 }
-
-.container iframe {
-  width: 800px;
-  height: 800px;
-  border: none;
-  transform: scale(0.465);
-  transform-origin: top left;
-
-  border: solid white 14px;
-}
-
 
 footer {
   display: flex;
@@ -457,6 +453,10 @@ footer {
   .browser-content {
     grid-template-columns: 1fr;
   }
+
+  .desktop-tictactoe {
+    display: none;
+  }
 }
 
 /* tablet */
@@ -472,6 +472,10 @@ footer {
   .mobile-bar .sidebar-button {
     display: none;
   }
+
+  .desktop-tictactoe {
+    display: none;
+  }
 }
 
 /* laptop */
@@ -479,6 +483,28 @@ footer {
   .browser-content {
     grid-template-columns: 300px 1fr;
   }
+
+  .desktop-tictactoe {
+    display: block;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+  }
+
+  .desktop-tictactoe iframe {
+    width: 800px;
+    height: 800px;
+    border: none;
+    transform: scale(0.465);
+    transform-origin: top left;
+
+    border: solid white 14px;
+  }
+
+  .mobile-tictactoe {
+    display: none;
+  }
+
 }
 
 /* desktop */
