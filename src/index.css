@@ -309,10 +309,20 @@ body {
   display: grid;
   grid-template-columns: 250px 1fr;
   flex: 1;
+  min-height: 0;
+}
+
+.browser-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
 }
 
 main {
-  overflow: auto;
+  min-width: 0;
+  min-height: 0;
+  overflow-y: auto;
 }
 
 aside {
@@ -383,6 +393,25 @@ aside .where p {
   width: 40px;
 }
 
+.container {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+
+  margin: 0 auto;
+}
+
+.container iframe {
+  width: 800px;
+  height: 800px;
+  border: none;
+  transform: scale(0.465);
+  transform-origin: top left;
+
+  border: solid white 14px;
+}
+
+
 footer {
   display: flex;
   justify-content: center;
@@ -428,20 +457,6 @@ footer {
   .browser-content {
     grid-template-columns: 1fr;
   }
-}
-
-.container {
-  width: 500px;
-  height: 500px;
-  overflow: hidden;
-}
-
-.container iframe {
-  width: 800px;
-  height: 800px;
-  border: none;
-  transform: scale(0.625);
-  transform-origin: top left;
 }
 
 /* tablet */

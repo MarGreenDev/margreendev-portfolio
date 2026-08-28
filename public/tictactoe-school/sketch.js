@@ -47,8 +47,8 @@ function setup() {
   hoverColorVakje9 = color(255, 210, 150);
   button = createButton("Restart");
   //achtergrondmuziek
-  muziekje.play();
-  muziekje.loop();
+  // muziekje.play();
+  // muziekje.loop();
 }
 
 function draw() {
@@ -320,7 +320,7 @@ function draw() {
 
   if (gelijkspel == true) {
     button.show(); // laat de restart button zien wanneer het spel gelijk is
-    loser.play();//speelt een boe geroep geluid af wanneer het gelijkspel is 
+    // loser.play();//speelt een boe geroep geluid af wanneer het gelijkspel is 
   }
 
   if (erHeeftIemandGewonnen == true) {
@@ -328,7 +328,7 @@ function draw() {
     beurt = "speler0";
     button.show();//laat button zien wanneer het spel voorbij is
     textSize(50);
-    celebration.play();//speelt gejuich af wanneer er iemand wint
+    // celebration.play();//speelt gejuich af wanneer er iemand wint
   }
 
 }
@@ -523,6 +523,6 @@ function restartSpel() {
   beurt = "speler1"
   erHeeftIemandGewonnen = false;
   gelijkspel = false;
-  celebration.stop();
-  loser.stop();
+  // celebration.stop();
+  // loser.stop();
 }
