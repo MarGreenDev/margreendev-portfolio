@@ -6,6 +6,7 @@ import About from "./pages/about";
 import Projects from "./pages/projects";
 import Contact from "./pages/contact";
 import SidebarButton from "./components/sidebarButton";
+import Tictactoe from "./pages/projects/tictactoe";
 
 
 function App() {
@@ -61,8 +62,9 @@ function App() {
 
           <main>
             {activePage === "about" && <About />}
-            {activePage === "projects" && <Projects />}
+            {activePage === "projects" && <Projects setActivePage={setActivePage} />}
             {activePage === "contact" && <Contact />}
+            {activePage === "tictactoe" && <Tictactoe />}
           </main>
         </div>
 
