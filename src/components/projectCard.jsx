@@ -9,7 +9,7 @@ export default function ProjectCard({
 
     return (
 
-        <article>
+        <article className="project-card">
             <h2>{title}</h2>
 
             <p>{description}</p>

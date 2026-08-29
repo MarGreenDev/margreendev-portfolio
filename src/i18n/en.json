@@ -16,5 +16,12 @@
     },
     "footer": {
         "text": "2026 | Made with 💚 by Marylou Groeneveld"
+    },
+    "project-card": {
+        "view-button": "View project",
+        "tictactoe": {
+            "title": "Tic-Tac-Toe",
+            "description": "My first game made with P5.js!"
+        }
     }
 }

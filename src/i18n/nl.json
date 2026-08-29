@@ -16,5 +16,12 @@
     },
     "footer": {
         "text": "2026 | Gemaakt met 💚 door Marylou Groeneveld"
+    },
+    "project-card": {
+        "view-button": "Project bekijken",
+        "tictactoe": {
+            "title": "Boter-kaas-en-eieren",
+            "description": "Mijn eerste spel gemaakt met P5.js!"
+        }
     }
 }
