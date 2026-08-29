@@ -21,7 +21,7 @@ button {
 
 body {
   margin: 0;
-  min-height: 90vh;
+  min-height: 90dvh;
 
   background-image: url(assets/background-img.jpeg);
   background-repeat: no-repeat;
@@ -39,9 +39,9 @@ body {
 .browser {
   width: 90%;
   max-width: 1200px;
-  height: 85vh;
+  height: 85dvh;
 
-  margin: 5vh auto;
+  margin: 5dvh auto;
 
   display: flex;
   flex-direction: column;
