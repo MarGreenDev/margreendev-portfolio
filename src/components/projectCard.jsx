@@ -10,9 +10,14 @@ export default function ProjectCard({
     return (
 
         <article className="project-card">
-            <h2>{title}</h2>
 
-            <p>{description}</p>
+            <img src="https://placehold.co/100" alt="PLACEHOLDER" />
+
+            <div>
+                <h2>{title}</h2>
+
+                <p>{description}</p>
+            </div>
 
             <ViewProject
                 setActivePage={setActivePage}

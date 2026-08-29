@@ -2,6 +2,8 @@
   --background-color: rgba(241, 240, 231, 0.5);
   --primary-color: #26352A;
   --secondary-color: #AFCDA3;
+
+  --project-card-bg: rgba(184, 216, 181, 0.6);
 }
 
 html {
@@ -406,6 +408,42 @@ aside .where p {
   display: block;
   width: 75%;
   margin: 0 auto;
+}
+
+/* PROJECT CARD!!!!!! */
+
+.project-card {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2vw;
+
+  padding: 15px;
+  width: fit-content;
+
+  background-color: var(--project-card-bg);
+
+  border-top: var(--primary-color) solid 1px;
+  border-bottom: var(--primary-color) solid 1px;
+
+  button {
+    align-self: flex-end;
+    margin-bottom: 20px;
+
+    background: transparent;
+    border: none;
+
+    text-decoration: underline;
+
+    cursor: pointer;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+
+    box-shadow: white -1px -1px,
+      black 1px 1px;
+  }
 }
 
 footer {

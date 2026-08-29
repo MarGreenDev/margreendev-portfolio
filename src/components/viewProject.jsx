@@ -7,7 +7,7 @@ export default function ViewProject({ setActivePage, project }) {
     return (
         <button
             onClick={() => setActivePage(project)}>
-            {t("project-card.view-button")}
+            {t("project-card.view-button")} →
         </button>
     );
 }
