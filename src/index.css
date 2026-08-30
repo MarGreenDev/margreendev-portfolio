@@ -126,6 +126,7 @@ body {
 .language {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   border-radius: 15px;
   background-color: white;
