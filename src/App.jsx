@@ -7,6 +7,7 @@ import Projects from "./pages/projects";
 import Contact from "./pages/contact";
 import SidebarButton from "./components/sidebarButton";
 import Tictactoe from "./pages/projects/tictactoe";
+import Softwire from "./pages/projects/softwire";
 
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
 
           <div className="search-bar">
             <img src="lock.svg" alt="lock" />
-            <p>https://margreen.dev/{activePage}</p>
+            <p className="fake-url"><span className="fake-https">https://</span>margreen.dev/{activePage}</p>
           </div>
 
           <div className="language">
@@ -65,6 +66,7 @@ function App() {
             {activePage === "projects" && <Projects setActivePage={setActivePage} />}
             {activePage === "contact" && <Contact />}
             {activePage === "tictactoe" && <Tictactoe />}
+            {activePage === "softwire" && <Softwire />}
           </main>
         </div>
 

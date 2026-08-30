@@ -123,6 +123,11 @@ body {
   opacity: 50%;
 }
 
+.fake-url {
+  display: flex;
+  align-items: center;
+}
+
 .language {
   display: flex;
   align-items: center;
@@ -419,16 +424,20 @@ aside .where p {
   margin: 0 auto;
 }
 
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 /* PROJECT CARD!!!!!! */
 
 .project-card {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   gap: 2vw;
 
   padding: 15px;
-  width: fit-content;
-
   background-color: var(--project-card-bg);
 
   border-top: var(--primary-color) solid 1px;
@@ -437,6 +446,8 @@ aside .where p {
   button {
     align-self: flex-end;
     margin-bottom: 20px;
+
+    min-width: fit-content;
 
     background: transparent;
     border: none;
@@ -480,6 +491,10 @@ footer {
 /* mobile */
 @media (max-width: 767px) {
   .search-bar img {
+    display: none;
+  }
+
+  .fake-url .fake-https {
     display: none;
   }
 
@@ -568,6 +583,14 @@ footer {
 
   .mobile-tictactoe {
     display: none;
+  }
+
+  .project-card {
+    width: 65%;
+
+    .card-container {
+      flex-wrap: nowrap;
+    }
   }
 
 }
