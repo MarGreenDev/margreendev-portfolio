@@ -13,6 +13,7 @@ export default function Projects({ setActivePage }) {
                 description={t("project-card.tictactoe.description")}
                 project="tictactoe"
                 setActivePage={setActivePage}
+                thumb={"/thumbnails/tictactoe-thumb.png"}
             />
         </>
     )

@@ -19,6 +19,8 @@ html {
 
 button {
   font-family: monospace;
+
+  color: black;
 }
 
 body {
@@ -130,6 +132,10 @@ body {
   padding: 0 10px 0 10px;
 
   text-align: center;
+
+  img {
+    margin: 0 auto;
+  }
 }
 
 .search-bar,
@@ -441,8 +447,17 @@ aside .where p {
     width: 100px;
     height: 100px;
 
+    align-self: center;
+    margin-right: 15px;
+
     box-shadow: white -1px -1px,
       black 1px 1px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 }
 
@@ -494,6 +509,15 @@ footer {
 
   .desktop-tictactoe {
     display: none;
+  }
+
+  .project-card {
+    flex-direction: column;
+
+    img {
+      width: 150px;
+      height: 150px;
+    }
   }
 }
 
