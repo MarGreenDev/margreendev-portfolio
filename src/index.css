@@ -135,7 +135,6 @@ body {
   text-align: center;
 
   img {
-    margin: 0 auto;
     display: block;
   }
 }
@@ -152,6 +151,7 @@ body {
 
 .language button {
   display: flex;
+  justify-content: center;
   gap: 10px;
   width: 100%;
   background-color: transparent;
